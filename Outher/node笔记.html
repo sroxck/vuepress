@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>node笔记 | Sroxck</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/vuepress/favicon.ico">
+    <meta name="description" content="技术文档">
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.b0869546.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.320e2bee.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.eed581ef.js" as="script"><link rel="preload" href="/vuepress/assets/js/145.842db6ce.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.9989ae1b.js"><link rel="prefetch" href="/vuepress/assets/js/100.da10e341.js"><link rel="prefetch" href="/vuepress/assets/js/101.eeb22411.js"><link rel="prefetch" href="/vuepress/assets/js/102.81063825.js"><link rel="prefetch" href="/vuepress/assets/js/103.be69e9ad.js"><link rel="prefetch" href="/vuepress/assets/js/104.ebda5ffb.js"><link rel="prefetch" href="/vuepress/assets/js/105.7d12bdf3.js"><link rel="prefetch" href="/vuepress/assets/js/106.83f0b8e9.js"><link rel="prefetch" href="/vuepress/assets/js/107.c529b213.js"><link rel="prefetch" href="/vuepress/assets/js/108.463aae52.js"><link rel="prefetch" href="/vuepress/assets/js/109.3528e6f9.js"><link rel="prefetch" href="/vuepress/assets/js/11.4d46669c.js"><link rel="prefetch" href="/vuepress/assets/js/110.4c0526c6.js"><link rel="prefetch" href="/vuepress/assets/js/111.f49b1857.js"><link rel="prefetch" href="/vuepress/assets/js/112.3c2df394.js"><link rel="prefetch" href="/vuepress/assets/js/113.45ecba6d.js"><link rel="prefetch" href="/vuepress/assets/js/114.a4822a7f.js"><link rel="prefetch" href="/vuepress/assets/js/115.2d5de59d.js"><link rel="prefetch" href="/vuepress/assets/js/116.7f2632fd.js"><link rel="prefetch" href="/vuepress/assets/js/117.8a9b285d.js"><link rel="prefetch" href="/vuepress/assets/js/118.d894f5d7.js"><link rel="prefetch" href="/vuepress/assets/js/119.7b16dbc6.js"><link rel="prefetch" href="/vuepress/assets/js/12.f4c34033.js"><link rel="prefetch" href="/vuepress/assets/js/120.d85c4fbc.js"><link rel="prefetch" href="/vuepress/assets/js/121.0d157eff.js"><link rel="prefetch" href="/vuepress/assets/js/122.dd75569b.js"><link rel="prefetch" href="/vuepress/assets/js/123.7bee1732.js"><link rel="prefetch" href="/vuepress/assets/js/124.5372f45f.js"><link rel="prefetch" href="/vuepress/assets/js/125.c1b33a6e.js"><link rel="prefetch" href="/vuepress/assets/js/126.7ddbb437.js"><link rel="prefetch" href="/vuepress/assets/js/127.b0681fb8.js"><link rel="prefetch" href="/vuepress/assets/js/128.4f4ea437.js"><link rel="prefetch" href="/vuepress/assets/js/129.96daa2df.js"><link rel="prefetch" href="/vuepress/assets/js/13.20c70c49.js"><link rel="prefetch" href="/vuepress/assets/js/130.87a94625.js"><link rel="prefetch" href="/vuepress/assets/js/131.24cf7a40.js"><link rel="prefetch" href="/vuepress/assets/js/132.c96dcea1.js"><link rel="prefetch" href="/vuepress/assets/js/133.5acb6401.js"><link rel="prefetch" href="/vuepress/assets/js/134.ab545266.js"><link rel="prefetch" href="/vuepress/assets/js/135.e96cb4ee.js"><link rel="prefetch" href="/vuepress/assets/js/136.ab61efe0.js"><link rel="prefetch" href="/vuepress/assets/js/137.8e6115d4.js"><link rel="prefetch" href="/vuepress/assets/js/138.6b7e194f.js"><link rel="prefetch" href="/vuepress/assets/js/139.09a4ba95.js"><link rel="prefetch" href="/vuepress/assets/js/14.0322cf95.js"><link rel="prefetch" href="/vuepress/assets/js/140.b980dcee.js"><link rel="prefetch" href="/vuepress/assets/js/141.b3e3cce3.js"><link rel="prefetch" href="/vuepress/assets/js/142.e5283a0b.js"><link rel="prefetch" href="/vuepress/assets/js/143.2a280e6f.js"><link rel="prefetch" href="/vuepress/assets/js/144.d7e60f20.js"><link rel="prefetch" href="/vuepress/assets/js/146.5aa7bbe6.js"><link rel="prefetch" href="/vuepress/assets/js/147.fd730efa.js"><link rel="prefetch" href="/vuepress/assets/js/148.c92d661c.js"><link rel="prefetch" href="/vuepress/assets/js/149.2056f33b.js"><link rel="prefetch" href="/vuepress/assets/js/15.f933daf2.js"><link rel="prefetch" href="/vuepress/assets/js/150.24b5271e.js"><link rel="prefetch" href="/vuepress/assets/js/151.2ded8848.js"><link rel="prefetch" href="/vuepress/assets/js/152.e5220533.js"><link rel="prefetch" href="/vuepress/assets/js/153.2f15ba92.js"><link rel="prefetch" href="/vuepress/assets/js/154.2dd0ed61.js"><link rel="prefetch" href="/vuepress/assets/js/155.6d38a83e.js"><link rel="prefetch" href="/vuepress/assets/js/156.dcd2c575.js"><link rel="prefetch" href="/vuepress/assets/js/157.044c226d.js"><link rel="prefetch" href="/vuepress/assets/js/158.0c4b0a9f.js"><link rel="prefetch" href="/vuepress/assets/js/159.8db1fad9.js"><link rel="prefetch" href="/vuepress/assets/js/16.0e3d45a0.js"><link rel="prefetch" href="/vuepress/assets/js/160.1d451c6a.js"><link rel="prefetch" href="/vuepress/assets/js/161.094b27ec.js"><link rel="prefetch" href="/vuepress/assets/js/162.43a81ba1.js"><link rel="prefetch" href="/vuepress/assets/js/163.fa017e12.js"><link rel="prefetch" href="/vuepress/assets/js/164.201fa98e.js"><link rel="prefetch" href="/vuepress/assets/js/165.f2edd563.js"><link rel="prefetch" href="/vuepress/assets/js/166.db7e2f67.js"><link rel="prefetch" href="/vuepress/assets/js/167.50f62d7a.js"><link rel="prefetch" href="/vuepress/assets/js/168.597ee6b4.js"><link rel="prefetch" href="/vuepress/assets/js/169.6729e301.js"><link rel="prefetch" href="/vuepress/assets/js/17.6e2f1d00.js"><link rel="prefetch" href="/vuepress/assets/js/170.55b5b1f0.js"><link rel="prefetch" href="/vuepress/assets/js/171.e8a3a1b4.js"><link rel="prefetch" href="/vuepress/assets/js/172.61a4d3ca.js"><link rel="prefetch" href="/vuepress/assets/js/173.665e7f03.js"><link rel="prefetch" href="/vuepress/assets/js/174.79e26f91.js"><link rel="prefetch" href="/vuepress/assets/js/175.737a2b45.js"><link rel="prefetch" href="/vuepress/assets/js/176.6f77bab9.js"><link rel="prefetch" href="/vuepress/assets/js/177.4448272c.js"><link rel="prefetch" href="/vuepress/assets/js/178.d395205e.js"><link rel="prefetch" href="/vuepress/assets/js/179.e96d56bc.js"><link rel="prefetch" href="/vuepress/assets/js/18.5aac4a5c.js"><link rel="prefetch" href="/vuepress/assets/js/180.827a1d7a.js"><link rel="prefetch" href="/vuepress/assets/js/181.c61a1783.js"><link rel="prefetch" href="/vuepress/assets/js/182.d45067d0.js"><link rel="prefetch" href="/vuepress/assets/js/183.a08008c5.js"><link rel="prefetch" href="/vuepress/assets/js/184.868407ba.js"><link rel="prefetch" href="/vuepress/assets/js/185.58f6e5c7.js"><link rel="prefetch" href="/vuepress/assets/js/186.d5d62d14.js"><link rel="prefetch" href="/vuepress/assets/js/187.23cdc9b5.js"><link rel="prefetch" href="/vuepress/assets/js/188.292b0130.js"><link rel="prefetch" href="/vuepress/assets/js/189.cacd2844.js"><link rel="prefetch" href="/vuepress/assets/js/19.1db8b9cc.js"><link rel="prefetch" href="/vuepress/assets/js/190.f41efafd.js"><link rel="prefetch" href="/vuepress/assets/js/191.804f3f0f.js"><link rel="prefetch" href="/vuepress/assets/js/192.0310b693.js"><link rel="prefetch" href="/vuepress/assets/js/193.d7c3e602.js"><link rel="prefetch" href="/vuepress/assets/js/194.9734df9d.js"><link rel="prefetch" href="/vuepress/assets/js/195.510dcbbe.js"><link rel="prefetch" href="/vuepress/assets/js/196.f518080c.js"><link rel="prefetch" href="/vuepress/assets/js/197.5f8321ad.js"><link rel="prefetch" href="/vuepress/assets/js/198.3d606fa8.js"><link rel="prefetch" href="/vuepress/assets/js/199.300b0eec.js"><link rel="prefetch" href="/vuepress/assets/js/20.adcb2d5a.js"><link rel="prefetch" href="/vuepress/assets/js/200.f667825a.js"><link rel="prefetch" href="/vuepress/assets/js/201.f2186690.js"><link rel="prefetch" href="/vuepress/assets/js/202.78cac18f.js"><link rel="prefetch" href="/vuepress/assets/js/203.300ffb0b.js"><link rel="prefetch" href="/vuepress/assets/js/204.36b5da08.js"><link rel="prefetch" href="/vuepress/assets/js/205.16d8a486.js"><link rel="prefetch" href="/vuepress/assets/js/206.fb37762c.js"><link rel="prefetch" href="/vuepress/assets/js/207.81f65af8.js"><link rel="prefetch" href="/vuepress/assets/js/208.dbb9380a.js"><link rel="prefetch" href="/vuepress/assets/js/209.489c4989.js"><link rel="prefetch" href="/vuepress/assets/js/21.c6a01e77.js"><link rel="prefetch" href="/vuepress/assets/js/210.9c1264ab.js"><link rel="prefetch" href="/vuepress/assets/js/211.9c948f0f.js"><link rel="prefetch" href="/vuepress/assets/js/212.532e0c2d.js"><link rel="prefetch" href="/vuepress/assets/js/213.0ffc9d2a.js"><link rel="prefetch" href="/vuepress/assets/js/214.92c1232f.js"><link rel="prefetch" href="/vuepress/assets/js/215.33110410.js"><link rel="prefetch" href="/vuepress/assets/js/216.11619535.js"><link rel="prefetch" href="/vuepress/assets/js/217.f1b7f36e.js"><link rel="prefetch" href="/vuepress/assets/js/218.219d1b31.js"><link rel="prefetch" href="/vuepress/assets/js/219.a3c78c33.js"><link rel="prefetch" href="/vuepress/assets/js/22.3a20ca9a.js"><link rel="prefetch" href="/vuepress/assets/js/220.f2a20694.js"><link rel="prefetch" href="/vuepress/assets/js/221.c4d4b012.js"><link rel="prefetch" href="/vuepress/assets/js/222.ef6d090c.js"><link rel="prefetch" href="/vuepress/assets/js/223.3cb4947b.js"><link rel="prefetch" href="/vuepress/assets/js/224.f998a95a.js"><link rel="prefetch" href="/vuepress/assets/js/225.9b5b040d.js"><link rel="prefetch" href="/vuepress/assets/js/226.29aaab09.js"><link rel="prefetch" href="/vuepress/assets/js/227.89a5ece3.js"><link rel="prefetch" href="/vuepress/assets/js/228.5d8882be.js"><link rel="prefetch" href="/vuepress/assets/js/229.2fae5b63.js"><link rel="prefetch" href="/vuepress/assets/js/23.09d9fd91.js"><link rel="prefetch" href="/vuepress/assets/js/230.4bbd58f9.js"><link rel="prefetch" href="/vuepress/assets/js/231.99c4224d.js"><link rel="prefetch" href="/vuepress/assets/js/24.494976b3.js"><link rel="prefetch" href="/vuepress/assets/js/25.bccae213.js"><link rel="prefetch" href="/vuepress/assets/js/26.b24f91c2.js"><link rel="prefetch" href="/vuepress/assets/js/27.6f6fca2c.js"><link rel="prefetch" href="/vuepress/assets/js/28.bf387815.js"><link rel="prefetch" href="/vuepress/assets/js/29.8f133a1f.js"><link rel="prefetch" href="/vuepress/assets/js/3.00f69165.js"><link rel="prefetch" href="/vuepress/assets/js/30.6aa08d82.js"><link rel="prefetch" href="/vuepress/assets/js/31.9c67fca1.js"><link rel="prefetch" href="/vuepress/assets/js/32.e15552b4.js"><link rel="prefetch" href="/vuepress/assets/js/33.58a8b964.js"><link rel="prefetch" href="/vuepress/assets/js/34.8a3d904e.js"><link rel="prefetch" href="/vuepress/assets/js/35.faa64673.js"><link rel="prefetch" href="/vuepress/assets/js/36.541b3029.js"><link rel="prefetch" href="/vuepress/assets/js/37.6e7a45e6.js"><link rel="prefetch" href="/vuepress/assets/js/38.bfaa9bf1.js"><link rel="prefetch" href="/vuepress/assets/js/39.0a4317b7.js"><link rel="prefetch" href="/vuepress/assets/js/4.fa5405a1.js"><link rel="prefetch" href="/vuepress/assets/js/40.2e6140ba.js"><link rel="prefetch" href="/vuepress/assets/js/41.54245c43.js"><link rel="prefetch" href="/vuepress/assets/js/42.ce42dec7.js"><link rel="prefetch" href="/vuepress/assets/js/43.7cf7ae0c.js"><link rel="prefetch" href="/vuepress/assets/js/44.cf9516d7.js"><link rel="prefetch" href="/vuepress/assets/js/45.92225052.js"><link rel="prefetch" href="/vuepress/assets/js/46.70fb533c.js"><link rel="prefetch" href="/vuepress/assets/js/47.c6615186.js"><link rel="prefetch" href="/vuepress/assets/js/48.be676872.js"><link rel="prefetch" href="/vuepress/assets/js/49.fa084b8f.js"><link rel="prefetch" href="/vuepress/assets/js/5.1b99ec2b.js"><link rel="prefetch" href="/vuepress/assets/js/50.e115f4a6.js"><link rel="prefetch" href="/vuepress/assets/js/51.83322cc9.js"><link rel="prefetch" href="/vuepress/assets/js/52.764aa20b.js"><link rel="prefetch" href="/vuepress/assets/js/53.735bcfa2.js"><link rel="prefetch" href="/vuepress/assets/js/54.eab4744e.js"><link rel="prefetch" href="/vuepress/assets/js/55.479d65ba.js"><link rel="prefetch" href="/vuepress/assets/js/56.0714c3e0.js"><link rel="prefetch" href="/vuepress/assets/js/57.6b06a21b.js"><link rel="prefetch" href="/vuepress/assets/js/58.5d76ddb6.js"><link rel="prefetch" href="/vuepress/assets/js/59.21622f32.js"><link rel="prefetch" href="/vuepress/assets/js/6.d8c65338.js"><link rel="prefetch" href="/vuepress/assets/js/60.29ecb820.js"><link rel="prefetch" href="/vuepress/assets/js/61.0c7ed8b9.js"><link rel="prefetch" href="/vuepress/assets/js/62.48d616fe.js"><link rel="prefetch" href="/vuepress/assets/js/63.923e8f7f.js"><link rel="prefetch" href="/vuepress/assets/js/64.0f465ac5.js"><link rel="prefetch" href="/vuepress/assets/js/65.1f45ec15.js"><link rel="prefetch" href="/vuepress/assets/js/66.a47badfa.js"><link rel="prefetch" href="/vuepress/assets/js/67.65ad6d06.js"><link rel="prefetch" href="/vuepress/assets/js/68.e6175b6b.js"><link rel="prefetch" href="/vuepress/assets/js/69.03d92e22.js"><link rel="prefetch" href="/vuepress/assets/js/7.78877743.js"><link rel="prefetch" href="/vuepress/assets/js/70.10acfa7a.js"><link rel="prefetch" href="/vuepress/assets/js/71.6cb25cac.js"><link rel="prefetch" href="/vuepress/assets/js/72.874b0169.js"><link rel="prefetch" href="/vuepress/assets/js/73.c36c3ef0.js"><link rel="prefetch" href="/vuepress/assets/js/74.f15b9528.js"><link rel="prefetch" href="/vuepress/assets/js/75.ff81237e.js"><link rel="prefetch" href="/vuepress/assets/js/76.030fe129.js"><link rel="prefetch" href="/vuepress/assets/js/77.5f44fe71.js"><link rel="prefetch" href="/vuepress/assets/js/78.d86d41d4.js"><link rel="prefetch" href="/vuepress/assets/js/79.012f141a.js"><link rel="prefetch" href="/vuepress/assets/js/8.79641f0b.js"><link rel="prefetch" href="/vuepress/assets/js/80.ee87d321.js"><link rel="prefetch" href="/vuepress/assets/js/81.3e453da1.js"><link rel="prefetch" href="/vuepress/assets/js/82.26eea9f2.js"><link rel="prefetch" href="/vuepress/assets/js/83.359effba.js"><link rel="prefetch" href="/vuepress/assets/js/84.2f56e836.js"><link rel="prefetch" href="/vuepress/assets/js/85.cae181af.js"><link rel="prefetch" href="/vuepress/assets/js/86.df80fa10.js"><link rel="prefetch" href="/vuepress/assets/js/87.e745cec0.js"><link rel="prefetch" href="/vuepress/assets/js/88.f7187f17.js"><link rel="prefetch" href="/vuepress/assets/js/89.562b93f7.js"><link rel="prefetch" href="/vuepress/assets/js/9.32815169.js"><link rel="prefetch" href="/vuepress/assets/js/90.e58fc866.js"><link rel="prefetch" href="/vuepress/assets/js/91.27b81dc5.js"><link rel="prefetch" href="/vuepress/assets/js/92.d4c71ed7.js"><link rel="prefetch" href="/vuepress/assets/js/93.db2d7386.js"><link rel="prefetch" href="/vuepress/assets/js/94.d3d511c9.js"><link rel="prefetch" href="/vuepress/assets/js/95.a637cb58.js"><link rel="prefetch" href="/vuepress/assets/js/96.1c8df787.js"><link rel="prefetch" href="/vuepress/assets/js/97.9f2e4324.js"><link rel="prefetch" href="/vuepress/assets/js/98.d5230848.js"><link rel="prefetch" href="/vuepress/assets/js/99.1233e9ff.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.b0869546.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar istop"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><!----> <span class="site-name">Sroxck</span></a> <div class="links"><div class="search-box"><input aria-label="Search" placeholder="Search doc" autocomplete="off" aria-placeholder="搜索技术文档" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress/Outher/" class="nav-link router-link-active">
+  随手记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/java/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Css/" class="nav-link">
+  Css
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/ES6-guides/intro.html" class="nav-link">
+  ES6
+</a></div><div class="nav-item"><a href="/vuepress/WebApi-guides/canvas.html" class="nav-link">
+  WebApi
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人开发文档" class="dropdown-title"><span class="title">个人开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人开发文档" class="mobile-dropdown-title"><span class="title">个人开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/Sims/sims.html" class="nav-link">
+  Sims
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Sui/" class="nav-link">
+  Sims-ui
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Sims/tool_en.html" class="nav-link">
+  Sims-tool
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Sims/transAst.html" class="nav-link">
+  Sims-ast
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress/Outher/" class="nav-link router-link-active">
+  随手记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="笔记" class="mobile-dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/ES6/" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Js/" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/java/" class="nav-link">
+  JAVA
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Css/" class="nav-link">
+  Css
+</a></li></ul></div></div><div class="nav-item"><a href="/vuepress/ES6-guides/intro.html" class="nav-link">
+  ES6
+</a></div><div class="nav-item"><a href="/vuepress/WebApi-guides/canvas.html" class="nav-link">
+  WebApi
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人开发文档" class="dropdown-title"><span class="title">个人开发文档</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人开发文档" class="mobile-dropdown-title"><span class="title">个人开发文档</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/Sims/sims.html" class="nav-link">
+  Sims
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Sui/" class="nav-link">
+  Sims-ui
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Sims/tool_en.html" class="nav-link">
+  Sims-tool
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/Sims/transAst.html" class="nav-link">
+  Sims-ast
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="使用命令行工具-poweshell-使用node"><a href="#使用命令行工具-poweshell-使用node" class="header-anchor">#</a> 使用命令行工具: poweShell 使用node</h2> <h2 id="js中存在两大问题-文件依赖和命名冲突"><a href="#js中存在两大问题-文件依赖和命名冲突" class="header-anchor">#</a> js中存在两大问题,文件依赖和命名冲突</h2> <p>node.js中规定一个js文件就是一个模块,模块内部定义的变量和函数,默认情况下,外部无法访问<br>
+模块内部可以使用exports对象进行成员导出,使用require导入</p> <h2 id="导出成员-exports和module-exports-都可以-已module-exports为准"><a href="#导出成员-exports和module-exports-都可以-已module-exports为准" class="header-anchor">#</a> 导出成员,exports和module.exports 都可以,已module.exports为准</h2> <h2 id="系统模块"><a href="#系统模块" class="header-anchor">#</a> 系统模块</h2> <h3 id="文件模块-fs"><a href="#文件模块-fs" class="header-anchor">#</a> 文件模块 fs</h3> <div class="language- extra-class"><pre><code>    fs.readFile(文件路径,[文件编码],回调函数)
+        回调函数中有2个形参 err和doc err为null 说明读取成功 err为一个对象说明读取失败
+        doc就是读取的文件内容
+    writeFile(文件名(路径),写入的数据,回调函数)
+        写入文件不存在会自动创建
+        err为null说明写入成功
+</code></pre></div><h3 id="路径模块-path"><a href="#路径模块-path" class="header-anchor">#</a> 路径模块 path</h3> <div class="language- extra-class"><pre><code>    path.join(路径,路径,路径...) 路径拼接
+    在node中使用绝对路径
+    在node中的相对路径大多数时候是相对于命令行执行目录的
+    使用__dirname 可以获取当前文件的绝对路径
+    require中的相对路径是相对文件的
+</code></pre></div><h2 id="第三方模块"><a href="#第三方模块" class="header-anchor">#</a> 第三方模块</h2> <div class="language- extra-class"><pre><code>通常由多个文件组成的文件夹,又名包
+有2中存在方式,已JS库形式,已命令行工具形式
+npmjs.com 第三方模块储存和分发的仓库
+npm : node package manage node第三方管理工具
+使用npm下载第三方模块
+    npm install 模块名 默认下载到命令行执行目录
+    分为全局安装(命令行工具)和本地安装(js文件)
+</code></pre></div><h3 id="第三方模块-nodemon"><a href="#第三方模块-nodemon" class="header-anchor">#</a> 第三方模块 nodemon</h3> <div class="language- extra-class"><pre><code>    nodemon 是一个命令行工具,辅助开发,作用是保存文件后自动执行文件,不需要重新输入命令
+    使用方法:使用nodemon代替node命令
+</code></pre></div><h3 id="第三方模块-nrm"><a href="#第三方模块-nrm" class="header-anchor">#</a> 第三方模块 nrm</h3> <div class="language- extra-class"><pre><code>    nrm是npm下载管理工具,可以快速切换npm下载地址,切换到国内淘宝的下载地址,速度会快很多
+    使用方法: nrl ls 显示可用下载地址 nrm use 地址 使用下载地址
+</code></pre></div><h2 id="前端构建工具-gulp"><a href="#前端构建工具-gulp" class="header-anchor">#</a> 前端构建工具 gulp</h2> <div class="language- extra-class"><pre><code>将机械化操作编写成任务,用命令行执行,用机器代替手工
+</code></pre></div><h3 id="gulp能做什么"><a href="#gulp能做什么" class="header-anchor">#</a> gulp能做什么</h3> <div class="language- extra-class"><pre><code>    html,css,js文件压缩
+    es6,less等语法转换
+    公共文件抽离
+    修改文件,浏览器自动刷新
+</code></pre></div><h3 id="gulp提供的方法-使用方法"><a href="#gulp提供的方法-使用方法" class="header-anchor">#</a> gulp提供的方法(使用方法)</h3> <div class="language- extra-class"><pre><code>    gulp.src()获取任务需要处理的文件
+    gulp.dest()输出文件
+    gulp.task() 创建任务
+    gulp.watch()监视文件变化
+    .pipe() 处理操作
+</code></pre></div><h3 id="gulp使用方法"><a href="#gulp使用方法" class="header-anchor">#</a> gulp使用方法</h3> <div class="language- extra-class"><pre><code>    下载gulp  npm install gulp
+    在项目根目录下新建gulpfile.js文件
+    重构项目文件结构:src目录放源文件.dist目录放修改后的文件
+    在gulpfile.js中编写任务,在命令行中执行任务
+</code></pre></div><h3 id="复制任务"><a href="#复制任务" class="header-anchor">#</a> 复制任务</h3> <div class="language- extra-class"><pre><code>    gulp.task('first', () =&gt; {
+    console.log('第一个gulp任务');
+    gulp.src('./src/css/base.css')
+    .pipe(gulp.dest('dist/css'));})
+</code></pre></div><h3 id="gulp插件"><a href="#gulp插件" class="header-anchor">#</a> gulp插件</h3> <div class="language- extra-class"><pre><code>    gulp-htmlmin html压缩
+    gulp-csso css压缩
+    gulp-babel js语法转换
+    gulp-less  less语法转换
+    gulp-uglify js压缩
+    gule-file-include  抽取公共文件  语法@@include(路径)
+    browsersync 浏览器同步
+</code></pre></div><h3 id="package-json文件的使用"><a href="#package-json文件的使用" class="header-anchor">#</a> package.json文件的使用</h3> <div class="language- extra-class"><pre><code>    项目描述文件,记录了当前项目信息,名称,版本,作者,项目依赖第三方包的信息,传输文件不需要传输node_modules  package.json中有第三方依赖的信息,使用npm install 会默认下载所需要的第三方
+    使用 npm init -y 生成package.json
+</code></pre></div><h2 id="node-js模块查找规则"><a href="#node-js模块查找规则" class="header-anchor">#</a> node.js模块查找规则</h2> <h3 id="省略后缀查找机制"><a href="#省略后缀查找机制" class="header-anchor">#</a> 省略后缀查找机制</h3> <div class="language- extra-class"><pre><code>    如果省略后缀,先找同名js文件,找不到再找同名文件夹
+    如果找到的是同名文件夹,就会去找文件夹中的index.js
+    如果没有index.js就会去当前文件夹中的pakeage.js中查找main选项中有没有入口文件
+    如果指定的入口文件不存在或没有指定入口文件,就会报错
+</code></pre></div><h3 id="没有路径也没有后缀查找机制"><a href="#没有路径也没有后缀查找机制" class="header-anchor">#</a> 没有路径也没有后缀查找机制</h3> <div class="language- extra-class"><pre><code>    node.js会假设它是系统模块,去node_modules文件夹中查找是否有同名js文件
+    没有就找有没有同名文件夹
+    如果找到的是同名文件夹,就会去找文件夹中的index.js
+    如果没有index.js就会去当前文件夹中的pakeage.js中查找main选项中有没有入口文件
+    如果指定的入口文件不存在或没有指定入口文件,就会报错
+</code></pre></div><h2 id="node服务器"><a href="#node服务器" class="header-anchor">#</a> Node服务器</h2> <h3 id="创建服务器"><a href="#创建服务器" class="header-anchor">#</a> 创建服务器</h3> <div class="language- extra-class"><pre><code>    const http = require('http') //引用系统模块
+    const app = http.createServer()//创建web服务器
+    app.on('request',(request,response)=&gt;{//request 请求事件
+            request.method //获取请求的方式
+            req.url //获取请求的地址
+            req.headers //获取请求报文(请求头?)
+            response.end('相应结果')//作出相应
+    })
+    app.listen(3000) //监听3000端口
+</code></pre></div><h3 id="node响应"><a href="#node响应" class="header-anchor">#</a> Node响应</h3> <div class="language- extra-class"><pre><code>response.writeHead()设置响应报文
+    第一个参数是htpp状态码 如200 404 等
+    第二个参数是一个对象,json格式 {}
+        对象中包括相应类型 content-type:text/html;charset=uft8设置响应格式和编码
+请求参数
+    系统模块 url  处理url的
+    用法:const url = require('url'),可以写入第二个参数true 将查询参数解析成对象
+    url.parse()方法:解析url,返回对象,把url中各个部分拆分成属性放入对象中
+    url.parse()返回结果中,pathname是不包含参数的地址
+    使用系统模块path 中path.join方法拼接路径,会自动加上系统分隔符//或者\\
+post请求参数
+    post参数通过事件的方式接受,data事件和end事件
+    当请求参数传递时触发data事件,传递完毕后触发end事件
+    request.on(data) request.on(end)
+    系统模块 querystring 
+    使用querystring.pase() 把字符串(json)转换为对象
+    post请求参数被放置在请求体中,获取post数据使用data和end事件,获取get数据使用url中的pathname
+路由 route
+    路由是指客户端请求地址与服务器程序代码的对应关系,简单来说就是请求什么响应什么,就是判断并响应的代码
+静态资源处理 static
+    使用第三方插件模块,mime判断页面请求类型,并返回
+    mime.getType(路径) 根据路径返回资源类型
+Node异步编程 Promise
+    promise是解决node.js中异步回调地狱的问题,是Es6语法
+    promise是构造函数,需要通过new的方式实例化,并且要传递一个匿名函数作为参数.函数有2个形参,resolve和reject
+    语法 
+    let promise = new Promise((resolve,reject)=&gt;{
+    setTimeout(() =&gt; {
+                      if(false){
+                           resolve('哈哈')
+                       }else{
+                           reject('失败了')
+                       }
+    }, 200);
+      })
+    promise.then(result=&gt;console.log(result)).catch(error=&gt;console.log(error))
+    异步执行完成后,resolve(传出结果),外面使用then((result)=&gt;{log(result)})接收
+    异步执行失败后,reject(传出结果),外面使用catch((result)=&gt;{log(result)})接收
+    resolve和reject可以使用链式编程
+</code></pre></div><h2 id="mongdb数据库"><a href="#mongdb数据库" class="header-anchor">#</a> MongDB数据库</h2> <div class="language- extra-class"><pre><code>数据库相关概念
+    database:数据库,数据库软件可以有多个数据库
+    collection:集合,一组数据的集合,可以理解为js的数组
+    document:文档,一条具体的数据,可以理解为js的对象
+    field:字段,文档中的属性名称,可以理解为js对象的属性
+数据库链接
+    node需要安装mongoose模块,npm install mongoose
+    使用mongoose提供的connect方法链接数据库
+    mongoose.connect('数据库地址').then(回调函数).catch(回调函数)
+    then返回链接成功后的信息,catch返回失败的对象
+    在MongoDB中链接的数据库不存在,MongoDB会自动创建
+创建集合
+    创建集合分两步,一是对集合设定规则,二是创建集合并应用,创建mongoose.Schema构造函数的实例即可
+    设定集合规则:
+    const xxxSchema = new mongoose.Schema({name:String,author:String}) 给mongoose.Schema构造函数传入一个对象,写入属性名和数据类型
+    创建集合并应用规则
+    mongoose.model()用来创建集合
+    conse Xxx = mongoose.model('集合名称(首字母大写)',规则名),会返回一个构造函数
+创建文档
+    创建文档实际上就是向集合中插入数据PS集合创建后不插入文档,数据库内不显示,好比创建了一个li不追加到ul中
+    创建文档的方法,1:创建集合实例 2:调用实例对象下的save方法.或者使用构造函数的create方法
+    const xxxs = new xx({name:'猪肘子',author:'啊哈哈'})
+    xxxs.save()
+    或者使用↓↓
+    Xxx(创建集合model方法返回的构造函数).create({name:'猪肘子',author:'啊哈哈'}).then(result=&gt;成功的代码).catch(err=&gt;失败的代码)
+mongoDB数据库导入数据
+    mongoimport -d 要导入进哪个数据库的名字 -c 要导入到集合的名字 --file 要导入的文件
+    注意,导入数据库要先将MongoDB的安装目录下的bin目录添加到系统环境变量path中
+查找数据
+    集合构造函数.find({查询条件}).then(()=&gt;{查询结果})
+    .find()查询,没有查询条件对象默认查询所有文档
+    find({&quot;name&quot; : {$regex:'大虾'}}) 模糊查询
+    限定查询:$gt 大于  $lt 小于 例 : find({age{$gt:3,$lt:9}})
+    匹配包含:$in 例 .find({hobbies:{$in:打豆豆}}),常用于搜索查询
+    查询字段:.find().select('字段') 不想查询的字段用负号
+    排序查询:.find().sort(age) 升序,降序加负号
+    跳过限制:.find().skip(跳过多少条开始查询).limit(限定查询几条)
+删除文档
+    删除单个 .findOneAndDelete({查询条件}).then((res)=&gt;{}),查找一个文档并删除,查找到多个只删除找到的第一个
+    删除多个 .deleteMany({删除条件}).then((res)=&gt;{})
+更新文档
+    更新单个 集合构造函数.updateOne({查询条件},{要修改的值}).then((res)=&gt;{})
+    更新多个 集合构造函数.updateMany({查询条件},{要修改的值}).then((res)=&gt;{})
+mongoose验证
+    创建集合规则时,可以设置字段的验证规则,验证失败则不插入文档
+    验证使用对象设置 例 name:{type:String,required:true},限制name字段是类型是字符串,而且必须填写
+    required:true  必传字段,添加此属性的字段,必须添加
+    minlength:长度  限制最小长度
+    maxlength:长度  限制最大长度
+    trim:true 去除两端空格
+    min:n 限制数值类型最小为n
+    max:n 限制数值类型最大为n
+    default:指定默认值,例 default:Date.now  不传会自动使用默认值
+    enum:['1','2','3'] 指定传入值,传入的必须是数组内的值
+    重点:unique:true 传入的值不能和数据库内的重复
+    自定义验证器:validate:{validetor:(v)=&gt;{v&amp;&amp;v.length&gt;4},message:'自定义错误信息'} 验证v存在并且v的长度大于4
+集合关联
+    不同集合的数据是有关系的,比如文章和用户在不同的集合中,但是用户发布的文章,需要关联起来,就需要使用集合关联
+    使用方法:使用ID进行关联
+    使用populate进行关联查询
+    id的类型:mongoose.Schema.Types.ObjectId,ref:'要关联的集合'
+    .find().populate(关联集合属性)查询关联
+</code></pre></div><h2 id="第三方路由模块-router"><a href="#第三方路由模块-router" class="header-anchor">#</a> 第三方路由模块 router</h2> <div class="language- extra-class"><pre><code>1 获取路由对象 const getRouter = require(&quot;router&quot;),router = getRouter(),
+2 调用路由对象提供的方法创建路由 router.get('/add',()=&gt;{})
+3 启用路由 在请求事件中使用 router(res,req,()=&gt;{必填回调函数})
+</code></pre></div><h2 id="第三方静态资源处理模块-serve-static"><a href="#第三方静态资源处理模块-serve-static" class="header-anchor">#</a> 第三方静态资源处理模块 serve-static</h2> <div class="language- extra-class"><pre><code>1 引入模块 const servestatic = require(' serve-static')
+2 调用方法创建静态资源服务并制定静态资源目录,并在请求事件中开启const serve = serve-static('静态资源目录') ,serve(res,req,callback)</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2/25/2021, 11:17:32 AM</span></div></footer> <!----> </main> <div class="slideshow"><div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片3.b23ffa6d.jpeg);"></div> <div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片1.1b3969f4.jpeg);"></div> <div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片2.1c44d8e6.jpeg);"></div> <div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片4.0eadb41b.jpeg);"></div> <div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片5.bf3e56b6.jpeg);"></div> <div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片6.6ed32861.jpeg);"></div> <div class="slideshow-image" style="background-image:url(/vuepress/assets/img/图片7.1f138db0.jpeg);"></div></div></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.320e2bee.js" defer></script><script src="/vuepress/assets/js/2.eed581ef.js" defer></script><script src="/vuepress/assets/js/145.842db6ce.js" defer></script>
+  </body>
+</html>
